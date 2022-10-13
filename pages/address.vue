@@ -1,10 +1,8 @@
 <template>
     <div>
-
         <nuxt-link to="/">Home Api</nuxt-link>
-        hello
-        <div class="container">
-            <button class="find-state" @click="findMyState">Find my state</button>
+        <div>
+            <button  @click="findMyState">Find my state</button>
             <p>{{ city }}</p>
         </div>
     </div>
@@ -12,6 +10,7 @@
 
 <script setup>
 const city = ref('')
+
 const findMyState = () => {
     const success = (position) => {
         /* console.log(position) */
@@ -24,7 +23,7 @@ const findMyState = () => {
         fetch(geoApiUrl)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                /* console.log(data) */
                 city.value = data.city
             })
     }
