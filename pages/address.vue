@@ -1,5 +1,6 @@
 <template>
     hello
+    <nuxt-link to="/">Home Api</nuxt-link>
     <div class="container">
         <h1 class="status"></h1>
         <button class="find-state">Find my state</button>
@@ -8,7 +9,7 @@
 
 <script >
 export default {
-
+    /* https://www.youtube.com/watch?v=VK9F8BWrOgY */
     /* https://stackoverflow.com/questions/56180458/referenceerror-document-is-not-defined-in-svelte-3 */
     mounted() {
 
