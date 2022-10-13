@@ -1,9 +1,12 @@
 <template>
-    hello
-    <nuxt-link to="/">Home Api</nuxt-link>
-    <div class="container">
-        <h1 class="status"></h1>
-        <button class="find-state">Find my state</button>
+    <div>
+
+        hello
+        <nuxt-link to="/">Home Api</nuxt-link>
+        <div class="container">
+            <h1 class="status"></h1>
+            <button class="find-state">Find my state</button>
+        </div>
     </div>
 </template>
 
