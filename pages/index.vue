@@ -1,8 +1,6 @@
-
-
 <template>
     <div>
-
+        
         <header>
             <nuxt-link to="/address">Address</nuxt-link>
         </header>
@@ -18,7 +16,7 @@
     </div>
 </template>
   
-<script >
+<script>
 
 export default defineComponent({
     async setup() {
@@ -37,7 +35,7 @@ export default defineComponent({
         getValue() {
             /* Essayer avec {} pour la variable et $ pour l'appeler */
             // Sélectionner l'élément input et récupérer sa valeur
-            var { text } = document.getElementById("in").value;
+            const text = document.getElementById("in").value;
             // Afficher la valeur
             console.log(text)
         }
